@@ -10,16 +10,20 @@
 function show(e){
 	console.log(e);
 	document.getElementById('Content').style.visibility = "hidden";
+	document.getElementById('BackContent').style.visibility = "hidden";
 	document.getElementById('About').style.display = "none";
 	document.getElementById('CV').style.display = "none";
 	document.getElementById('Projects').style.display = "none";
 	document.getElementById('Contact').style.display = "none";
+	document.getElementById('Deadpool').style.display = "none";
 
 	if(e.target.innerText == 'Inicio'){
 		document.getElementById('Content').style.visibility = "hidden";
+		document.getElementById('BackContent').style.visibility = "hidden";
 	}
 	else if(e.target.innerText == 'Sobre'){
 		document.getElementById('Content').style.visibility = "visible";
+		document.getElementById('BackContent').style.visibility = "visible";
 		if(document.getElementById('About').style.display == "block")
 			document.getElementById('About').style.display = "none";
 		else
@@ -27,6 +31,7 @@ function show(e){
 	}
 	else if(e.target.innerText == 'Curriculo'){
 		document.getElementById('Content').style.visibility = "visible";
+		document.getElementById('BackContent').style.visibility = "visible";
 		if(document.getElementById('CV').style.display == "block")
 			document.getElementById('CV').style.display = "none";
 		else
@@ -34,6 +39,7 @@ function show(e){
 	}
 	else if(e.target.innerText == 'Projetos'){
 		document.getElementById('Content').style.visibility = "visible";
+		document.getElementById('BackContent').style.visibility = "visible";
 		if(document.getElementById('Projects').style.display == "block")
 			document.getElementById('Projects').style.display = "none";
 		else
@@ -41,10 +47,19 @@ function show(e){
 	}
 	else if(e.target.innerText == 'Contato'){
 		document.getElementById('Content').style.visibility = "visible";
+		document.getElementById('BackContent').style.visibility = "visible";
 		if(document.getElementById('Contact').style.display == "block")
 			document.getElementById('Contact').style.display = "none";
 		else
 			document.getElementById('Contact').style.display = "block";
+	}
+	else if(e.target.nodeName == 'IMG'){
+		document.getElementById('Content').style.visibility = "visible";
+		document.getElementById('BackContent').style.visibility = "visible";
+		if(document.getElementById('Deadpool').style.display == "block")
+			document.getElementById('Deadpool').style.display = "none";
+		else
+			document.getElementById('Deadpool').style.display = "block";
 	}
 
 	

@@ -1,14 +1,18 @@
+
 <html>
 <head>
 	<link rel="stylesheet" href="style.css" />
 	<link rel="icon" href="icon.png">
+	<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
 
 	<header>
-		<div id="Logo">
-			<img src="Logo.png">
+	 	<div id="Logo">
 			<h1> Pedro Henrique Brandao Nogueira Prado</h1>
+			<div id="dead"><button id="deadlogo"type="button"><img src="Logo.png"></button></div>
 		</div>
 		<div id="Menu">
 			<ul class="">
@@ -18,17 +22,20 @@
 				<button type="button">  Curriculo </button>
 				<button type="button">  Projetos </button>
 				<button type="button">  Contato </button>
-			
-			</ul>
-		</div>
-	</header>
 
+			</ul>
+		</div> 
+	</header>
+	<div id="backHeader">	
+	</div>
+	<div id="BackContent"></div>
 	<div id="Content">
 
 		<div id="About">
 
 			<h2>Sobre</h2>
 			<p>23 anos nascido em Patos de Minas, mas Belo Horizontino de coracao. Decidiu entrar no mundo da computacao sem muita certeza mas felizmente percebeu que fez a escolha correta. Apaixonado por musica, filmes, seriese video-games, tem ligados a estes a maior parte de seus hobbys, alem do bom e velho futebol. </p>
+			<img src="me.jpg">
 		</div>
 
 		<div id="CV">
@@ -42,19 +49,43 @@
 			<p>Intercambio no Canada onde cursou Ingles e trabalhou como vendedor na Tommy Hilfiger e na equipe do Chipotle Mexican Grill. Antes foi monitor da disciplina Programacao 2 no CEFET-MG</p>
 			<h3>Habilidades</h3>
 			<p>Ingles Fluente<br>Linguagens C/C++,Java,SQL,HTML e CSS<br>Tecnicas de teste de software</p>
-			<p> Curriculum Completo <a href:"Curriculum.pdf" target="_blank"> aqui </a> </p>
+			<p> Curriculum Completo <a href="Curriculum.pdf" target="_blank"> aqui </a> </p>
 		</div>
 		<div id="Projects">
-
+			
 		</div>
 		<div id="Contact">
+			<p>E-mail: pedrohbnprado@hotmail.com<br></p>
+			<h2>Me Encontre</h2>
+			<div id="gmap">
 
+			 </div>
 		</div>
+		<div id="Deadpool">
+			<iframe width="590" height="400" src="https://www.youtube.com/embed/gn4Z-U9OyuA" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<!-- <div id="Lil">
+			<img src="LilDeadpool.png">
+		</div> -->
 	</div>
 
 	<footer>
-
+		<ul class="soc">
+			<li><a class="soc-twitter" href="https://twitter.com/Pedrohbnp" target="_blank"></a></li>
+			<li><a class="soc-facebook" href="https://www.facebook.com/pedrohbnprado" target="_blank"></a></li>
+			<li><a class="soc-google" href="https://plus.google.com/u/0/106026032306534902389/posts" target="_blank"></a></li>
+			<li><a class="soc-instagram" href="https://instagram.com/Pedrohbnp" target="_blank"></a></li>
+			<li><a class="soc-github soc-icon-last" href="https://github.com/Pedrohbnp" target="_blank"></a></li>
+		</ul>
 	</footer>
-<script src="script.js"></script>
+
+	<div id="Lil">
+		<img id="lil"src="LilDeadpool.png">
+	</div>
+
+	<script src="http://maps.googleapis.com/maps/api/js"></script>	
+	<script src="script.js"></script>
+	<script src="gmap.js"></script>
+</body>
 </body>
 </html>

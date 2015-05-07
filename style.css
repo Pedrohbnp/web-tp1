@@ -1,4 +1,6 @@
 
+@import url(http://fonts.googleapis.com/css?family=Courgette);
+
 body{
 	color: white;
 	position:relative;
@@ -17,44 +19,78 @@ body{
 h1,h2,h3{
 	font-family: "Comic Sans MS";
 }
+p{
+	font-family: "Courgette"
+}
 
-header{
+#backHeader{
 	font-size: 16px;
 	position: relative;
 	height: 100px;
 	width: 100%;
 	opacity: 0.8;
-	background-image: 	url(http://s3.foxfilm.com/foxmovies/dev/films/107/assets/deadpool_about_bg.jpg-2326731092.jpg);
+	background-image: 	url(backg.jpg);
 	z-index: 10;
 	top:0;
 	left:0;
 }
 
+header{
+	position: absolute;
+	height: 100px;
+	width: 100%;
+	z-index: 11;
+	top: 0;
+	left:0;
+}
+#dead{
+	width: 60px;
+	margin: 0 auto;
+	clear: right;
+}
 #Logo img{
 	width: 60px;
 	height: 60px;
+	margin: 0 auto;
+	position: relative;
+	top:10;
 	border-radius: 110px;
 	display: inline;
-	text-align: center;
+	align: center;
 	opacity: 1.0;
 
 }
+#deadlogo{
+	position: absolute;
+	width: 0;
+	height: 0;
+	padding: 0;
+}
 #Logo h1{
 	display: inline;
-	margin: 0;
-	float: left;
-}
-#menu{
 	position: relative;
+	left: 5;
+	top:5;
+	margin: 0;
+	/*float: left;*/
+}
+#logo{
+
+}
+#Menu{
+	position: absolute;
+	bottom:10;
+	right:0;
 	width: 400px; 
 	float: right;
 	font-family: "Comic Sans MS";
 	font-size: 20px;
+	z-index: 11;
 }
-#menu ul{
+#Menu ul{
 		margin: 0;
 }
-#menu li{
+#Menu li{
 	display: inline;
 }
 
@@ -70,16 +106,40 @@ animation-delay: 0s;
 animation-timing-function: linear;
 animation-fill-mode: forwards;*/
 	visibility: hidden;
+	position: absolute;
+	margin: auto;
+	margin-top: 0;
+	left:0;
+	right:0;
 	/*display: block;*/
+	width:600px;
+	height:100%;
+	/*margin: 0 auto;*/
+	top:100;
+	bottom:0;
+	padding-top: 50px;
+	/*background-image: 	url(backg.jpg);*/
+	z-index: 11;
+	/*opacity: 0.8;
+	-moz-opacity: 0.8;
+	filter: alpha(opacity=80);*/
+	padding: 5px;
+	clear: both;
+	box-sizing: border-box;
+}
+#BackContent{
+    /*position: absolute;*/
+	visibility: hidden;
 	width:600px;
 	height:100%;
 	margin: 0 auto;
 	top:100px;
 	bottom:100px;
-	background-image: 	url(http://s3.foxfilm.com/foxmovies/dev/films/107/assets/deadpool_about_bg.jpg-2326731092.jpg);
-	z-index: 10;
+	background-image: 	url(backg.jpg);
+	z-index: 9;
 	opacity: 0.8;
-	padding: 5px;
+	-moz-opacity: 0.8;
+	filter: alpha(opacity=80);
 }
 /*@keyframes fadeOut {
 from {
@@ -89,12 +149,33 @@ to {
 opacity: 0;
 }
 }*/
+
 #About{
 	display: none;
+	opacity: 1.0;
+	z-index: 12;
 }
 #About h2{
 	text-align: center;
 
+}
+#About img{
+	position: absolute;
+	margin: auto;
+	margin-top: 0;
+	left:0;
+	right:0;
+	width: 300px;
+	height: 300px;
+	border-radius: 110px;
+	display: inline;
+	margin: 0 auto;
+}
+a:hover{
+	color:blue;
+}
+a{
+	color:white;
 }
 #CV p{
 	margin-bottom: 0;
@@ -112,14 +193,186 @@ opacity: 0;
 #Project{
 	display: none;
 }
+#Deadpool{
+	display: none;
+
+}
+
+#gmap{
+	  width: 95%;
+  background: #7AB317;
+  height: 400px; 
+  padding: 1%;
+}
+#Lil{
+	position: absolute;
+	top: 50%;
+	/*right: -90;*/
+	right: -90;
+}
+#lil img{
+	display: none;
+	width: 200px;
+	height: 200px;
+	position: relative;
+	top:50%;
+	right:0;
+	/*right:-90;*/
+	-ms-transform: rotate(-8deg); /* IE 9 */
+    -webkit-transform: rotate(-8deg); /* Chrome, Safari, Opera */
+    transform: rotate(-8deg);
+}
+
+#deadlogo{
+	background-color: transparent;
+	border: 0;
+	border-radius: 110px;
+	border-color: transparent;
+}
+
+#deadlogo:hover{
+	background: transparent;
+	border: 0;
+	border-radius: 110px;
+	border-color: transparent;
+	color: transparent;
+	text-decoration: none;
+}
 footer{
+	padding-top: 21.5px;
 		font-size: 16px;
 	position: relative;
 	height: 100px;
 	width: 100%;
 	opacity: 0.8;
-	background-image: 	url(http://s3.foxfilm.com/foxmovies/dev/films/107/assets/deadpool_about_bg.jpg-2326731092.jpg);
+	background-image: 	url(backg.jpg);
 	z-index: 10;
 	bottom:0;
 	left:0;
 }
+
+  @font-face {
+    font-family: 'si';
+    src: url('socicon.eot');
+    src: url('socicon.eot?#iefix') format('embedded-opentype'),
+         url('socicon.woff') format('woff'),
+         url('socicon.ttf') format('truetype'),
+         url('socicon.svg#icomoonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+ 
+}
+ 
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family:si;
+        src: url(socicon.svg) format(svg);
+    }
+}
+
+.soc {
+	width: 302px;
+
+    overflow:hidden;
+    margin: 0 auto; padding:0;
+    list-style:none;
+}
+
+.soc li {
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+}
+
+.soc li a {
+    font-family:si!important;
+    font-style:normal;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+
+    -o-transition:.1s;
+    -ms-transition:.1s;
+    -moz-transition:.1s;
+    -webkit-transition:.1s;
+    transition:.1s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+
+    overflow:hidden;
+    text-decoration:none;
+    text-align:center;
+    display:block;
+    position: relative;
+    z-index: 1;
+    width: 49px;
+    height: 49px;
+    line-height: 49px;
+    font-size: 26px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    margin-right: 10px;
+    color: #ffffff;
+    background-color: none;
+}
+
+.soc-icon-last{
+    margin:0 !important;
+}
+
+.soc-twitter {
+    background-color: #4da7de;
+}
+.soc-twitter:before {
+    content:'a';
+}
+.soc-facebook {
+    background-color: #3e5b98;
+}
+.soc-facebook:before {
+    content:'b';
+}
+.soc-google {
+    background-color: #d93e2d;
+}
+.soc-google:before {
+    content:'c';
+}
+.soc-instagram {
+    background-color: #9c7c6e;
+}
+.soc-instagram:before {
+    content:'x';
+}
+.soc-github {
+    background-color: #5380c0;
+}
+.soc-github:before {
+    content:'Q';
+}
+
+.soc-twitter:hover {
+    background-color: #3993ca;
+}
+.soc-facebook:hover {
+    background-color: #2a4784;
+}
+.soc-google:hover {
+    background-color: #c52a19;
+}
+.soc-instagram:hover {
+    background-color: #88685a;
+}
+.soc-github:hover {
+    background-color: #3f6cac;
+}
+
+           
