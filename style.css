@@ -19,6 +19,9 @@ body{
 h1,h2,h3{
 	font-family: "Comic Sans MS";
 }
+h2{
+	margin-top: 0;
+}
 p{
 	font-family: "Courgette"
 }
@@ -116,16 +119,18 @@ animation-fill-mode: forwards;*/
 	height:100%;
 	/*margin: 0 auto;*/
 	top:100;
-	bottom:0;
-	padding-top: 50px;
+	bottom:100;
+	
 	/*background-image: 	url(backg.jpg);*/
-	z-index: 11;
+	z-index: 10s;
 	/*opacity: 0.8;
 	-moz-opacity: 0.8;
 	filter: alpha(opacity=80);*/
 	padding: 5px;
+	padding-top: 20px;
 	clear: both;
 	box-sizing: border-box;
+
 }
 #BackContent{
     /*position: absolute;*/
@@ -190,8 +195,13 @@ a{
 #Contact{
 	display: none;
 }
-#Project{
+#Projects{
 	display: none;
+
+}
+#Projects img{
+	width: 400px;
+
 }
 #Deadpool{
 	display: none;
@@ -249,6 +259,7 @@ footer{
 	z-index: 10;
 	bottom:0;
 	left:0;
+	box-sizing: border-box;
 }
 
   @font-face {

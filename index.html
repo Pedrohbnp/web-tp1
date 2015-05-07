@@ -2,6 +2,7 @@
 <html>
 <head>
 	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="lightbox.css" />
 	<link rel="icon" href="icon.png">
 	<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
@@ -52,7 +53,13 @@
 			<p> Curriculum Completo <a href="Curriculum.pdf" target="_blank"> aqui </a> </p>
 		</div>
 		<div id="Projects">
-			
+		<h2>Site Copa Do Mundo</h2>
+		<p>Trabalho desenvolvido no primeiro periodo de Engenharia de Computacao, primeiro contato com html. Como pode ver um desastre</p>
+		<img src="">
+		<h2>AboutMe.com</h2>
+		<p>Trabalho desenvolvido para a disciplina de Programacao POO/Java. O software e uma rede social que tem como objetivo a interecao dos usuarios, nos moldes do Twitter.</p>
+		
+		<button onclick="document.getElementById('lightbox').style.display='inline';" id="buttonBox"><img src="AboutMe.png"></button>
 		</div>
 		<div id="Contact">
 			<p>E-mail: pedrohbnprado@hotmail.com<br></p>
@@ -82,6 +89,32 @@
 	<div id="Lil">
 		<img id="lil"src="LilDeadpool.png">
 	</div>
+
+	<div id="lightbox" class="lightbox" style="display:none"
+      onclick="document.getElementById('lightbox').style.display='none';">
+
+   <table class="lightbox_table">
+
+   <tr>
+
+   <td class="lightbox_table_cell" align="center">
+
+      <div id="lightbox_content" style=
+
+            "width:300px; background-color:white; border:5px solid black;">
+
+         <p>Click anywhere to close the lightbox.</p>
+
+         <p>Use Javascript to insert anything here.</p>
+
+      </div>
+
+   </td>
+
+   </tr>
+
+   </table>
+</div>
 
 	<script src="http://maps.googleapis.com/maps/api/js"></script>	
 	<script src="script.js"></script>
