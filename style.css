@@ -234,6 +234,16 @@ a{
     transform: rotate(-8deg);
 }
 
+#baloon{
+	display: none;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	width: 200px;
+	height: 150px;
+
+}
+
 #deadlogo{
 	background-color: transparent;
 	border: 0;

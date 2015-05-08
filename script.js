@@ -17,11 +17,13 @@ function show(e){
 	document.getElementById('Projects').style.display = "none";
 	document.getElementById('Contact').style.display = "none";
 	document.getElementById('Deadpool').style.display = "none";
+	document.getElementById('lil').style.display = "none";
 	var cont = document.getElementById('Content')
 
 	if(e.target.innerText == 'Inicio'){
 		document.getElementById('Content').style.visibility = "hidden";
 		document.getElementById('BackContent').style.visibility = "hidden";
+		document.getElementById('lil').style.display = "block";
 	}
 	else if(e.target.innerText == 'Sobre'){
 		document.getElementById('Content').style.visibility = "visible";
