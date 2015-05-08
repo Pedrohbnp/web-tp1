@@ -22,14 +22,10 @@ function calcRoute(latitude, longitude) {
   var Digital=new Date()
   var hours=Digital.getHours()
 
-  if (hours>=7&&hours<=12) //CEFET
+  if (hours>=7&&hours<=12) 
     dest = '-19.938285, -43.999692';
-  else if (hours>13&&hours<=18) //AXXIOM
-    dest = '-19.935729, -43.935647';
-  else if (hours>20&&hours<=23) //ESTADIO INDEPENDENCIA -- GAAALOOO
-    dest = '-19.908399, -43.917746';
-  else //CASA
-    dest = '-19.925988, -43.947799';
+  else 
+    dest = '-19.913013, -43.913861';
   request = {
       origin: (latitude + ',' + longitude),
       destination: dest,

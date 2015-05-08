@@ -1,4 +1,3 @@
-
 @import url(http://fonts.googleapis.com/css?family=Courgette);
 
 body{
@@ -27,6 +26,7 @@ p{
 }
 
 #backHeader{
+	display: none;
 	font-size: 16px;
 	position: relative;
 	height: 100px;
@@ -81,10 +81,11 @@ header{
 
 }
 #Menu{
+	display: none;
 	position: absolute;
 	bottom:10;
 	right:0;
-	width: 600px; 
+	width: 400px; 
 	float: right;
 	font-family: "Comic Sans MS";
 	font-size: 20px;
@@ -95,7 +96,6 @@ header{
 }
 #Menu li{
 	display: inline;
-
 }
 
 
@@ -135,6 +135,7 @@ animation-fill-mode: forwards;*/
 }
 #BackContent{
     /*position: absolute;*/
+    display: none;
 	visibility: hidden;
 	width:600px;
 	height:100%;
@@ -157,7 +158,7 @@ opacity: 0;
 }*/
 
 #About{
-	display: none;
+	/*display: none;*/
 	opacity: 1.0;
 	z-index: 12;
 }
@@ -191,13 +192,13 @@ a{
 	text-align: center;
 }
 #CV{
-	display: none;
+	/*display: none;*/
 }
 #Contact{
-	display: none;
+	/*display: none;*/
 }
 #Projects{
-	display: none;
+	/*display: none;*/
 
 }
 #Projects img{
@@ -210,6 +211,7 @@ a{
 }
 
 #gmap{
+	display: none;
 	  width: 95%;
   background: #7AB317;
   height: 400px; 
@@ -262,75 +264,6 @@ footer{
 	left:0;
 	box-sizing: border-box;
 }
-
-/*.i2Style{
-font:bold 11px "Comic Sans MS", cursive, sans-serif;
-font-style:normal;
-color:#ffffff;
-background:#a80000;
-border:7px inset #474747;
-text-shadow:0px -1px 10px #222222;
-box-shadow:1px 1px 9px #000000;
--moz-box-shadow:1px 1px 9px #000000;
--webkit-box-shadow:1px 1px 9px #000000;
-border-radius:83px 0px 90px 40px;
--moz-border-radius:83px 0px 90px 40px;
--webkit-border-radius:83px 0px 90px 40px;
-width:40px;
-padding:2px 35px;
-cursor:pointer;
-/*margin:0 auto;*/
-/*}*/
-/*.i2Style:active{*/
-/*cursor:pointer;*/
-/*position:relative;*/
-/*top:2px;*/
-/*}*/
-.i2Style {
--moz-box-shadow:inset 0px 1px 0px 0px #000000;
-	-webkit-box-shadow:inset 0px 1px 0px 0px #000000;
-	box-shadow:inset 0px 1px 0px 0px #000000;
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c70808), color-stop(1, #000000) );
-	background:-moz-linear-gradient( center top, #c70808 5%, #000000 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c70808', endColorstr='#000000');
-	background-color:#c70808;
-	-webkit-border-top-left-radius:35px;
-	-moz-border-radius-topleft:35px;
-	border-top-left-radius:35px;
-	-webkit-border-top-right-radius:0px;
-	-moz-border-radius-topright:0px;
-	border-top-right-radius:0px;
-	-webkit-border-bottom-right-radius:35px;
-	-moz-border-radius-bottomright:35px;
-	border-bottom-right-radius:35px;
-	-webkit-border-bottom-left-radius:0px;
-	-moz-border-radius-bottomleft:0px;
-	border-bottom-left-radius:0px;
-	text-indent:-6.72px;
-	display:inline-block;
-	color:#ffffff;
-	font-family:Comic Sans MS;
-	font-size:11px;
-	font-weight:bold;
-	font-style:normal;
-	height:22px;
-	line-height:22px;
-	width:96px;
-	text-decoration:none;
-	text-align:center;
-	text-shadow:1px 1px 0px #000000;
-}
-.i2Style:hover {
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #000000), color-stop(1, #c70808) );
-	background:-moz-linear-gradient( center top, #000000 5%, #c70808 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#c70808');
-	background-color:#000000;
-}.i2Style:active {
-	position:relative;
-	top:1px;
-}
-
-
 
   @font-face {
     font-family: 'si';
