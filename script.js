@@ -95,9 +95,19 @@ function lightbox(l){
 	console.log(1111);
 	console.log(l);
 
-	 if(l.target.attributes.nodeValue == 'AboutMe.png'){
+	 if(l.target.outerHTML == '<img src="AboutMe.png">'){
 	 	console.log(1234);
 	 	document.getElementById('lightbox_content').innerHTML = '<img src="AboutMe.png">';
+	 	console.log(document.getElementById('lightbox_content').firstChild.width);
+	 	var tam = document.getElementById('lightbox_content').firstChild.width;
+	 	document.getElementById('lightbox_content').style.width = tam;
+	 }
+	 else if(l.target.outerHTML == '<img src="site_copa.png">'){
+	 	console.log(1234);
+	 	document.getElementById('lightbox_content').innerHTML = '<img src="site_copa.png">';
+	 	console.log(document.getElementById('lightbox_content').firstChild.width);
+	 	var tam = document.getElementById('lightbox_content').firstChild.width;
+	 	document.getElementById('lightbox_content').style.width = tam;
 	 }
 
 }
