@@ -18,12 +18,15 @@ function show(e){
 	document.getElementById('Contact').style.display = "none";
 	document.getElementById('Deadpool').style.display = "none";
 	document.getElementById('lil').style.display = "none";
+	document.getElementById('baloon').style.display = "none";
+	document.getElementById('baloon2').style.display = "none";
 	var cont = document.getElementById('Content')
 
 	if(e.target.innerText == 'Inicio'){
 		document.getElementById('Content').style.visibility = "hidden";
 		document.getElementById('BackContent').style.visibility = "hidden";
 		document.getElementById('lil').style.display = "block";
+		document.getElementById('baloon').style.display = "block";
 	}
 	else if(e.target.innerText == 'Sobre'){
 		document.getElementById('Content').style.visibility = "visible";
@@ -83,8 +86,12 @@ function show(e){
 		document.getElementById('BackContent').style.visibility = "visible";
 		if(document.getElementById('Deadpool').style.display == "block")
 			document.getElementById('Deadpool').style.display = "none";
-		else
+		else{
 			document.getElementById('Deadpool').style.display = "block";
+			document.getElementById('lil').style.display = "block";
+			document.getElementById('baloon2').style.display = "block";
+
+		}
 		if(cont.scrollHeight > cont.clientHeight || cont.scrollWidth > cont.clientWidth){
 			var alturaAtual = document.getElementById('Deadpool').offsetHeight;
 			console.log(alturaAtual)
